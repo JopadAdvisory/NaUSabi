@@ -1,0 +1,111 @@
+:root {
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --primary: oklch(78% .14 88);
+  --gradient-hero: radial-gradient(ellipse at 70% 40%, var(--primary) 0%, transparent 55%):
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  --gradient: linear-gradient(135deg, #d4af37 0%, #f5d77a 50%, #d4af37 100%);
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font-size: 16px;
+  color-scheme: light dark;
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (min-width: 1024px) {
+    font-size: 18px/145% var(--sans);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --radius: 1.5rem;
+    --bg: oklch(11% 0 0);
+    --fg: oklch(98.5% 0 0);
+    --card: oklch(16% 0 0);
+    --card-fg: oklch(98.5% 0 0);
+    --primary-fg: oklch(12% 0 0);
+    --primary: oklch(78% .14 88);
+    --gradient-hero: radial-gradient(ellipse at 70% 40%, var(--primary) 0%, transparent 55%);
+    --gradient: linear-gradient(135deg, #d4af37 0%, #f5d77a 50%, #d4af37 100%);
+    --muted: oklch(19% 0 0);
+    --muted-foreground: oklch(72% 0 0);
+    --border1: oklch(100% 0 0 / .08); 
+    --border2: oklch(78% .14 88 / .6);
+    --border3: oklch(78.181% 0.14054 88.277 / 0.274);
+    --btn1: oklch(90% .19 128);
+    --btn2: oklch(50% 0 0);
+    --heading: "Clash Display", "Inter Variable", system-ui, sans-serif;
+    --text: "Inter Variable", "Inter", system-ui, sans-serif;
+  }
+
+}
+
+#root {
+  margin: 0 auto;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: var(--text);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading);
+  font-weight: 700;
+  color: var(--fg);
+}
+
+h1 {
+  font-size: 36px;
+  letter-spacing: -1.68px;
+  margin: 20px 0;
+  @media (min-width: 1024px) {
+    margin: 32px 0;
+    font-size: 56px;
+  }
+}
+h2 {
+  font-size: 20px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (min-width: 1024px) {
+    font-size: 24px;
+  }
+}
+p,
+span {
+  margin: 0;
+  color: var(--muted-foreground);
+}
+
+.gradient {
+  background: var(--gradient);
+  color: #0000;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+

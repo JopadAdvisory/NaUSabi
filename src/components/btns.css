@@ -1,0 +1,61 @@
+.btn {
+    padding: 0.5rem 1rem;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 3rem;
+    text-wrap: nowrap;
+    text-decoration: none;
+    border-radius: 2.7rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn1 {
+    background: var(--btn1);
+    box-shadow: 0 10px 40px -10px color-mix(in oklab, var(--btn1) 45%, transparent);
+}
+
+.btn2 {
+    background: var(--muted);
+    
+    border: 1px solid var(--border1);
+}
+
+.btn:hover {
+    transform: scale(1.02);
+}
+
+.btn:active,
+.btn:focus,
+.btn:focus-visible {
+    transform: scale(0.98);
+}
+
+.whats {
+    color: var(--primary-fg);
+}
+
+.telegram {
+    color: #229ED9;
+}
+
+.btn1 span {
+    color: var(--primary-fg);
+    font-weight: 600;
+}
+
+.btn2 span {
+    font-weight: 600;
+    color: var(--fg);
+}
+
+.btn2:hover {
+    border: 1px solid var(--border2);
+    color: var(--primary);
+}
+
+.btn2:hover > span {
+    color: var(--primary);
+}

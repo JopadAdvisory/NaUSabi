@@ -1,0 +1,71 @@
+.rules-container {
+    width: 1126px;
+    max-width: 90%;
+    padding-top: 60px;
+    margin: 0 auto;
+     @media (min-width: 768px) {
+        max-width: 80%;
+    }
+}
+
+.rules-title {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.rules-paragraph {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    @media (min-width: 1024px) {
+        width: 70%;
+    }
+}
+
+.rules-container h1 {
+    margin-block: 14px;
+}
+
+.cards {
+    display: grid;
+    gap: 20px;
+    padding: 40px 0;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border3);
+    border-radius: var(--radius);
+    padding: 25px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+    box-shadow: 0 10px 40px -10px color-mix(in oklab, var(--primary) 45%, transparent);
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    padding: 10px 0;
+}
+
+.card:hover .ico {
+    background-color: var(--border3);
+}
+
+.ico {
+    border: 2px solid red;
+    display: inline-flex;
+    border: 1px solid var(--border3);
+    background-color: color-mix(in oklab, var(--primary) 5%, transparent);
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon {
+    color: var(--primary);
+}
