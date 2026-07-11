@@ -4,7 +4,7 @@ import { Brain, MessagesSquare, Trophy, Vote } from 'lucide-react';
 
 export function Community(): JSX.Element {
     return (
-        <section className="community" aria-label="Community section">
+        <section className="community" id="community" aria-label="Community section">
            <div className="community-container">
                 <span className="community-title">The Community</span>
                 <h1 >

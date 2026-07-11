@@ -8,7 +8,7 @@ import { FaTelegram, FaWhatsapp } from 'react-icons/fa';
 
 export function Hero(): JSX.Element {
     return (
-        <section className="hero" aria-label="Hero section">
+        <section className="hero" id='hero' aria-label="Hero section">
             <article className="hero__container" aria-label="Hero content">
             <img src={Stock2} className='stock2' alt="Stock 2" />
             <img src={Stock1} className='stock1' alt="Stock 1" />

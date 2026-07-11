@@ -4,7 +4,7 @@ import { Ban, HeartHandshake, Lightbulb, ShieldCheck, Users } from 'lucide-react
 
 export function Rules(): JSX.Element {
     return (
-        <section className="rules" aria-label="House Code">
+        <section className="rules" id="rules" aria-label="House Code">
            <div className="rules-container">
                 <span className="rules-title">House Code</span>
                 <h1 >
