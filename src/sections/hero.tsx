@@ -25,7 +25,7 @@ export function Hero(): JSX.Element {
                             Defend Yours?</span>
                     </h1>
                     <p className="hero__paragraph">
-                        Join thousands of people sharing ideas through daily polls, discussions and meaningful conversations.Every opinion matters. Every voice counts.
+                        Join thousands of people sharing ideas through daily polls, discussions and meaningful conversations. Every opinion matters. Every voice counts.
                     </p>
                     <div className="hero__buttons">
                         <Btn 
