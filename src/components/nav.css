@@ -10,6 +10,7 @@
     border: 1px solid var(--border3);
     background-color: var(--nav);
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     z-index: 4;
     width: 1126px;
     max-width: 90%;
@@ -107,6 +108,7 @@
 .menu:hover .nav-icon {
     color: var(--primary);
 }
+
 .mobile-menu {
     position: fixed;
     top: 85px;
