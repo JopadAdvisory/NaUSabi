@@ -46,8 +46,11 @@
 }
 
 .mid {
-    display: flex;
-    gap: 15px;
+    display: none;
+    @media (min-width: 768px) {
+        gap: 20px;
+        display: flex;
+    }
 }
 
 .right a {
