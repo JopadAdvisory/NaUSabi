@@ -6,7 +6,7 @@
     border-radius: var(--radius);
     width: 1126px;
     max-width: 90%;
-    padding: 20px;
+    padding: 8px 16px;
     border: 1px solid var(--border3);
     list-style-type: none;
     display: flex;
