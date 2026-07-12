@@ -103,10 +103,9 @@
 .hero__container {
     width: 1126px;
     max-width: 90%;
-    padding-top: 110px;
+    padding-top: 90px;
     margin: 0 auto;
     @media (min-width: 768px) {
-        padding-top:110px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 40px;
@@ -151,11 +150,16 @@
 
 .stock1 {
     position: absolute;
-    top: 0;
-    right: 20px;
+    right: 5px;
     z-index: -1;
+    top: 60px;
     bottom: 0;
-    width: 500px;
+    width: 300px;
+    @media (min-width: 768px) {
+        top: 30px;
+        width: 500px;
+        right: 20px;
+    }
 }
 .stock2 {
     position: absolute;
