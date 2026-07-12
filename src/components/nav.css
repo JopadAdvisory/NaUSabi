@@ -25,7 +25,6 @@
 
 .sub-con {
     width: 100%;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,6 +33,11 @@
 .nav__container  a {
     text-decoration: none;
     color: var(--muted-foreground);
+    transition: all .3s ease-in-out;
+}
+
+.nav__container  a:hover {
+    color: var(--fg);
 }
 
 .left span:first-child {
@@ -71,31 +75,87 @@
 }
 
 .menu {
+    display: flex;
+    padding: 15px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    border: 1px solid var(--border1);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
     @media (min-width: 768px) {
         display: none;
     }
 }
 
+.menu:hover {
+    border: 1px solid var(--border3);
+}
+
+.menu button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-icon {
+    color: var(--fg);
+    transition: all .3s ease-in-out;
+}
+.menu:hover .nav-icon {
+    color: var(--primary);
+}
 .mobile-menu {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: calc(100% + 15px);
+    position: fixed;
+    top: 85px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 1126px;
+    max-width: 90%;
+    z-index: 3;
     border-radius: var(--radius);
     border: 1px solid var(--border3);
     padding: 10px 16px;
     background-color: var(--nav);
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     @media (min-width: 768px) {
         display: none;
     }
 }
+
+.mobile-menu a {
+    text-decoration: none;
+    color: var(--fg);
+    padding: 16px;
+    font-weight: 700;
+    border-radius: var(--radius);
+    transition: all .3s ease-in-out;
+}
+
+.mobile-menu a:hover {
+    background-color: var(--border1);
+    color: var(--primary);
+}
+
 .right a {
     background: var(--primary);
     font-weight: 700;
     border-radius: var(--radius);
+    text-decoration: none;
     padding: 8px 20px;
     color: var(--primary-fg);
     display: inline-block;
+}
+
+.right2 a {
+    width: 100%;
+    padding: 16px;
+    text-align: center;
 }

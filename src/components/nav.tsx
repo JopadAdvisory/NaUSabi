@@ -35,28 +35,30 @@ export function Nav(): JSX.Element {
                     </div>
                 </div>
 
-                <div className='menu'>
+                <div className='menu'
+                    onClick={() => setMenuOpen(!menuOpen)}
+                >
                     <button
                         className="menu-btn"
                         onClick={() => setMenuOpen(!menuOpen)}
                     >
-                        {menuOpen ? <X size={28} /> : <Menu size={28} />}
+                        {menuOpen ? <X size={24} className='nav-icon' /> : <Menu className='nav-icon' size={24} />}
                     </button>
                 </div>
                 
-                {menuOpen && (
-                    <div className="mobile-menu">
-                        <a href="#community">What is it</a>
-                        <a href="#rules">Rules</a>
-                        <a href="#contact">Contact</a>
-                        <div className='right right2'>
-                            <a href="#join">
-                                <li>Join</li>
-                            </a>
-                        </div>
-                    </div>
-                )}
             </ul>
+
+            {menuOpen && (
+                <div className="mobile-menu">
+                    <a href="#community">What is it</a>
+                    <a href="#rules">Rules</a>
+                    <div className='right right2'>
+                        <a href="#join">
+                            Join
+                        </a>
+                    </div>
+                </div>
+            )}
         </nav>
     );
 }
