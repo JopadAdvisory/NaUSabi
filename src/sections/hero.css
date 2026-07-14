@@ -68,6 +68,10 @@
     color: var(--primary)
 }
 
+.hero__description {
+    line-height: 1;
+}
+
 .hero__subtext {
     display: flex;
     gap: 20px;
@@ -102,14 +106,12 @@
     max-width: 90%;
     padding-top: 90px;
     margin: 0 auto;
+    position: relative;
     @media (min-width: 768px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 40px;
         max-width: 80%;
-    }
-    @media (min-width: 1440px) {
-        position: relative;
     }
 }   
 
@@ -131,18 +133,20 @@
 }
 
 .hero__text::before {
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
         content: '';
         position: absolute;
-        top: 0;
-        left: 70%;
+        top: -20px;
+        left: 85%;
         z-index: 1;
+        padding: 0;
         background: url('/src/assets/images/hero-mascots.png');
         background-size: contain;
+        background-position: -70px 0;
         background-repeat: no-repeat;
         filter: drop-shadow(0 10px 10px var(--border2));
         bottom: 0;
-        width: 500px;
+        width: 465px;
     }
 }
 
@@ -156,7 +160,7 @@
     @media (min-width: 768px) {
         top: 30px;
         width: 500px;
-        right: 20px;
+        right: 0;
     }
 }
 
@@ -166,6 +170,13 @@
     z-index: -1;
     bottom: -60px;
     width: 50%;
+    display: none;
+    @media (min-width: 1024px) {
+        bottom: 30px;
+        display: inline-block;
+        width: 500px;
+        right: 0;
+    }
 }
 
 .hero__mascot {
