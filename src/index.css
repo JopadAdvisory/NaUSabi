@@ -112,8 +112,9 @@ span {
 }
 
 .motto {
-  font-size: 1.68rem;
+  font-size: 1.38rem;
   font-style: italic;
+  font-synthesis: style;
   font-weight: 700;
   font-family: var(--heading);
 }

@@ -68,10 +68,6 @@
     color: var(--primary)
 }
 
-.hero__description {
-    line-height: 1;
-}
-
 .hero__subtext {
     display: flex;
     gap: 20px;
