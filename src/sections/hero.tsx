@@ -27,6 +27,7 @@ export function Hero(): JSX.Element {
                     <p className="hero__paragraph">
                         Join thousands of people sharing ideas through daily polls, discussions and meaningful conversations. Every opinion matters. Every voice counts.
                     </p>
+                    <p className="motto gradient hero-motto">“No Just Talk Am. Prove Am.”</p>
                     <div className="hero__buttons">
                         <Btn 
                             href='#'
