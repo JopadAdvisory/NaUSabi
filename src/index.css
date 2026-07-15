@@ -1,55 +1,56 @@
-:root {
-  --radius: 1.5rem;
-  --bg: oklch(98.232% 0.00855 16.584);
-  --fg: oklch(14% 0 0);
+@media (prefers-color-scheme: light) {
+  :root {
+    --radius: 1.5rem;
+    --bg: oklch(98.232% 0.00855 16.584);
+    --fg: oklch(14% 0 0);
 
-  --card: oklch(100% 0 0);
-  --nav: oklch(99% 0 0 / 0.82);
-  --card-fg: oklch(14% 0 0);
+    --card: oklch(100% 0 0);
+    --nav: oklch(99% 0 0 / 0.82);
+    --card-fg: oklch(14% 0 0);
 
-  --primary: oklch(72% .14 88);
-  --primary-fg: oklch(99% 0 0);
+    --primary: oklch(72% .14 88);
+    --primary-fg: oklch(99% 0 0);
 
-  --gradient-hero: radial-gradient(
-    ellipse at 70% 40%,
-    oklch(82% .12 88 / 0.28) 0%,
-    transparent 60%
-  );
+    --gradient-hero: radial-gradient(
+      ellipse at 70% 40%,
+      oklch(82% .12 88 / 0.28) 0%,
+      transparent 60%
+    );
 
-  --gradient: linear-gradient(
-    135deg,
-    #d4af37 0%,
-    #f5d77a 50%,
-    #d4af37 100%
-  );
-  
-  --muted: oklch(95% 0 0);
-  --muted-foreground: oklch(48% 0 0);
+    --gradient: linear-gradient(
+      135deg,
+      #d4af37 0%,
+      #f5d77a 50%,
+      #d4af37 100%
+    );
+    
+    --muted: oklch(95% 0 0);
+    --muted-foreground: oklch(48% 0 0);
 
-  --border1: oklch(0% 0 0 / 0.08);
-  --border2: oklch(72% .14 88 / 0.45);
-  --border3: oklch(72% .14 88 / 0.18);
-  --mascot: url('/src/assets/images/lm.png');
+    --border1: oklch(0% 0 0 / 0.08);
+    --border2: oklch(72% .14 88 / 0.45);
+    --border3: oklch(72% .14 88 / 0.18);
+    --mascot: url('/src/assets/images/lm.png');
 
-  --btn1: oklch(78% .19 128);
-  --btn2: oklch(94% 0 0);
+    --btn1: oklch(78% .19 128);
+    --btn2: oklch(94% 0 0);
 
-  --heading: "Clash Display", "Inter Variable", system-ui, sans-serif;
-  --text: "Inter Variable", "Inter", system-ui, sans-serif;
+    --heading: "Clash Display", "Inter Variable", system-ui, sans-serif;
+    --text: "Inter Variable", "Inter", system-ui, sans-serif;
 
-  font-size: 16px;
-  color-scheme: light dark;
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    color-scheme: light dark;
+    background: var(--bg);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
-  @media (min-width: 1024px) {
-    font-size: 18px/145% var(--sans);
+    @media (min-width: 1024px) {
+      font-size: 18px/145% var(--sans);
+    }
   }
 }
-
 
 @media (prefers-color-scheme: dark) {
   :root {
