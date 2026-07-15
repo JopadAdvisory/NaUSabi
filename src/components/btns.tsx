@@ -16,16 +16,13 @@ export function Btn({ href, className, children} : BtnProps): JSX.Element {
             layout
             viewport={{ once: true, amount: 0.3 }}
             transition={{ layout: {
-            type: "spring",
-            stiffness: 70,
-            damping: 20,
-            mass: 1.2
-            },
-            type: "spring",
-            stiffness: 70,
-            damping: 20,
-            mass: 1.2
-            }} 
+            duration: 0.8,
+            ease: [0.16, 1, 0.3,1 ]
+        },
+            delay: 0.3,
+            duration: 0.8,
+            ease: [0.16, 1, 0.3,1 ]
+        }}
         > 
             <a href={href} className={className}>{children}</a>
         </motion.div>

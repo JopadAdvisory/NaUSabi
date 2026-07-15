@@ -14,16 +14,13 @@ export function Rules(): JSX.Element {
                     layout
                     viewport={{ once: true, amount: 0.3 }}
                     transition={{ layout: {
-                    type: "spring",
-                    stiffness: 70,
-                    damping: 20,
-                    mass: 1.2
-                    },
-                    type: "spring",
-                    stiffness: 70,
-                    damping: 20,
-                    mass: 1.2
-                    }} 
+                    duration: 0.8,
+                    ease: [0.16, 1, 0.3,1 ]
+                },
+                    delay: 0.3,
+                    duration: 0.8,
+                    ease: [0.16, 1, 0.3,1 ]
+                }}
                 >House Code</motion.span>
                 <motion.h1
                     initial={{ opacity: 0, y: 50 }}
@@ -31,36 +28,30 @@ export function Rules(): JSX.Element {
                     layout
                     viewport={{ once: true, amount: 0.3 }}
                     transition={{ layout: {
-                    type: "spring",
-                    stiffness: 70,
-                    damping: 20,
-                    mass: 1.2
-                    },
-                    type: "spring",
-                    stiffness: 70,
-                    damping: 20,
-                    mass: 1.2
-                    }} 
+                    duration: 0.8,
+                    ease: [0.16, 1, 0.3,1 ]
+                },
+                    delay: 0.3,
+                    duration: 0.8,
+                    ease: [0.16, 1, 0.3,1 ]
+                }}
                 >
                     Community <span className="gradient">Rules</span>
                 </motion.h1>
                 <motion.p 
                     className="rules-paragraph"
                     initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0}}
-                    layout
-                    viewport={{ once: true, amount: 0.3 }}
-                    transition={{ layout: {
-                    type: "spring",
-                    stiffness: 70,
-                    damping: 20,
-                    mass: 1.2
+                        whileInView={{ opacity: 1, y: 0}}
+                        layout
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ layout: {
+                        duration: 0.8,
+                        ease: [0.16, 1, 0.3,1 ]
                     },
-                    type: "spring",
-                    stiffness: 70,
-                    damping: 20,
-                    mass: 1.2
-                    }} 
+                        delay: 0.3,
+                        duration: 0.8,
+                        ease: [0.16, 1, 0.3,1 ]
+                    }}
                 >
                     A few small agreements that keep the conversation sharp.
                 </motion.p>
@@ -73,16 +64,13 @@ export function Rules(): JSX.Element {
                         layout
                         viewport={{ once: true, amount: 0.3 }}
                         transition={{ layout: {
-                        type: "spring",
-                        stiffness: 70,
-                        damping: 20,
-                        mass: 1.2
-                        },
-                        type: "spring",
-                        stiffness: 70,
-                        damping: 20,
-                        mass: 1.2
-                        }} 
+                        duration: 0.8,
+                        ease: [0.16, 1, 0.3,1 ]
+                    },
+                        delay: 0.3,
+                        duration: 0.8,
+                        ease: [0.16, 1, 0.3,1 ]
+                    }}
                     >
                         <div className='ico'>
                             <Ban className="icon" size={24} />
@@ -100,16 +88,13 @@ export function Rules(): JSX.Element {
                         layout
                         viewport={{ once: true, amount: 0.3 }}
                         transition={{ layout: {
-                        type: "spring",
-                        stiffness: 70,
-                        damping: 20,
-                        mass: 1.2
-                        },
-                        type: "spring",
-                        stiffness: 70,
-                        damping: 20,
-                        mass: 1.2
-                        }} 
+                        duration: 0.8,
+                        ease: [0.16, 1, 0.3,1 ]
+                    },
+                        delay: 0.3,
+                        duration: 0.8,
+                        ease: [0.16, 1, 0.3,1 ]
+                    }}
                     >
                         <div className='ico'>
                             <HeartHandshake className="icon" size={24} />
@@ -127,16 +112,13 @@ export function Rules(): JSX.Element {
                         layout
                         viewport={{ once: true, amount: 0.3 }}
                         transition={{ layout: {
-                        type: "spring",
-                        stiffness: 70,
-                        damping: 20,
-                        mass: 1.2
-                        },
-                        type: "spring",
-                        stiffness: 70,
-                        damping: 20,
-                        mass: 1.2
-                        }} 
+                        duration: 0.8,
+                        ease: [0.16, 1, 0.3,1 ]
+                    },
+                        delay: 0.3,
+                        duration: 0.8,
+                        ease: [0.16, 1, 0.3,1 ]
+                    }}
                     >
                         <div className='ico'>
                             <Lightbulb className="icon" size={24} />
@@ -154,16 +136,13 @@ export function Rules(): JSX.Element {
                         layout
                         viewport={{ once: true, amount: 0.3 }}
                         transition={{ layout: {
-                        type: "spring",
-                        stiffness: 70,
-                        damping: 20,
-                        mass: 1.2
-                        },
-                        type: "spring",
-                        stiffness: 70,
-                        damping: 20,
-                        mass: 1.2
-                        }} 
+                        duration: 0.8,
+                        ease: [0.16, 1, 0.3,1 ]
+                    },
+                        delay: 0.3,
+                        duration: 0.8,
+                        ease: [0.16, 1, 0.3,1 ]
+                    }}
                     >
                         <div className='ico'>
                             <ShieldCheck className="icon" size={24} />
@@ -181,16 +160,13 @@ export function Rules(): JSX.Element {
                         layout
                         viewport={{ once: true, amount: 0.3 }}
                         transition={{ layout: {
-                        type: "spring",
-                        stiffness: 70,
-                        damping: 20,
-                        mass: 1.2
-                        },
-                        type: "spring",
-                        stiffness: 70,
-                        damping: 20,
-                        mass: 1.2
-                        }} 
+                        duration: 0.8,
+                        ease: [0.16, 1, 0.3,1 ]
+                    },
+                        delay: 0.3,
+                        duration: 0.8,
+                        ease: [0.16, 1, 0.3,1 ]
+                    }}
                     >
                         <div className='ico'>
                             <Users className="icon" size={24} />
