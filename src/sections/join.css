@@ -70,5 +70,5 @@
     bottom: 0;
     border: 2px solid red;
     width: 100%;
-    background: var(--border3);
+    background: var(--primary);
 }
