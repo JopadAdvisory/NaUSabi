@@ -26,15 +26,24 @@ export function Footer(): JSX.Element {
                         <a href="#join">Join Community</a>
                     </div>
                     <div className="section3">
-                        <FaWhatsapp className='footer-icon' size={24} />
-                        <FaTelegram className='footer-icon' size={24} />
+                        <a className='footer-icon' href='https://chat.whatsapp.com/BMQ9NlSxC1J9gqRLHkUW8K?s=cl&p=a&ilr=0'>
+                            WhatsApp
+                            <FaWhatsapp size={19} />
+                        </a>
+                        <a className='footer-icon' href='https://t.me/NaU_Sabi'>
+                            Telegram
+                            <FaTelegram size={24} />
+                        </a>
                     </div>
                 </header>
             </div>
             <div className="copyright">
                 <p className='cr'>
                     <Copyright  size={14}/>
-                    <span className='footer-subtext'>Na U Sabi</span>
+                    <div>
+                        {new Date().getFullYear()}
+                        <span className='footer-subtext'> Na U Sabi. All rights reserved.</span>
+                    </div>
                 </p>
             </div>
         </footer>

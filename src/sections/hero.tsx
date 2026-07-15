@@ -30,14 +30,14 @@ export function Hero(): JSX.Element {
                     <p className="motto gradient hero-motto">“No Just Talk Am. Prove Am.”</p>
                     <div className="hero__buttons">
                         <Btn 
-                            href='#'
+                            href='https://chat.whatsapp.com/BMQ9NlSxC1J9gqRLHkUW8K?s=cl&p=a&ilr=0'
                             className='btn btn1'
                         >
                            <FaWhatsapp className='whats' size={25} />
                            <span>Join WhatsApp</span>
                         </Btn>
                         <Btn 
-                            href='#'
+                            href='https://t.me/NaU_Sabi'
                             className='btn btn2'
                         >
                            <FaTelegram className='telegram' size={25} />

@@ -3,6 +3,7 @@
     max-width: 90%;
     padding: 20px 0 30px 0;
     display: flex;
+    position: relative;
     flex-direction: column;
     margin: 0 auto;
     @media (min-width: 768px) {
@@ -15,6 +16,9 @@
     }
 }
 
+#join {
+    scroll-margin-top: 70px;
+}
 .join-title {
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -52,4 +56,19 @@
         justify-content: space-between;
         gap: 20px;
     }
+}
+
+.join-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+    left: 0;
+    filter: blur(200px);
+    /* animation: pulse2 20.5s ease-in-out infinite; */
+    bottom: 0;
+    border: 2px solid red;
+    width: 100%;
+    background: var(--border3);
 }
