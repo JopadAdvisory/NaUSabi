@@ -58,7 +58,7 @@
     }
 }
 
-.join-container::after {
+/* .join-container::after {
     content: "";
     position: absolute;
     top: 0;
@@ -66,9 +66,8 @@
     z-index: -2;
     left: 0;
     filter: blur(200px);
-    animation: pulse2 20.5s ease-in-out infinite;
     bottom: 0;
     width: 100%;
     transform: translateX(50%);
-    background: var(--border2);
-}
+    background: var(--border);
+} */
