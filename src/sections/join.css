@@ -65,8 +65,8 @@
     right: 0;
     z-index: -2;
     left: 0;
-    filter: blur(200px);
+    /* filter: blur(200px); */
     bottom: 0;
     width: 100%;
-    background: var(--border2);
+    /* background: var(--border2); */
 }
