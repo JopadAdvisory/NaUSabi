@@ -58,7 +58,7 @@
     }
 }
 
-/* .join-container::after {
+.join-container::after {
     content: "";
     position: absolute;
     top: 0;
@@ -69,5 +69,5 @@
     bottom: 0;
     width: 100%;
     transform: translateX(50%);
-    background: var(--border);
-} */
+    background: var(--border2);
+}
