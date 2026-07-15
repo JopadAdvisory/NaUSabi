@@ -8,12 +8,12 @@ import Stock4 from '../assets/images/ls2.png';
 import './hero.css';
 import { Btn } from '../components/btns';
 import { FaTelegram, FaWhatsapp } from 'react-icons/fa';
-const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
 export function Hero(): JSX.Element {
-    const [isDarkMode, setIsDarkMode] = useState(false);
-
+    const [isDarkMode, setIsDarkMode] = useState(() => window.matchMedia("(prefers-color-scheme: dark)").matches);
+    
     useEffect(() => {
+        const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
         const handleChange = (event: MediaQueryListEvent) => {
             setIsDarkMode(event.matches);
         };
