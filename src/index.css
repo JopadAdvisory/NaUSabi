@@ -29,7 +29,7 @@
 
 :root {
   --radius: 1.5rem;
-  --bg: oklch(98.5% 0 0);
+  --bg: oklch(98.232% 0.00855 16.584);
   --fg: oklch(14% 0 0);
 
   --card: oklch(100% 0 0);
@@ -80,7 +80,7 @@
 }
 
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --radius: 1.5rem;
     --bg: oklch(11% 0 0);
@@ -104,7 +104,7 @@
     --text: "Inter Variable", "Inter", system-ui, sans-serif;
   }
 
-}
+} */
 
 #root {
   margin: 0 auto;
