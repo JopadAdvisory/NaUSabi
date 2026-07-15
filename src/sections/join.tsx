@@ -1,20 +1,88 @@
 import type { JSX } from 'react/jsx-runtime';
 import { Btn } from '../components/btns';
 import { FaTelegram, FaWhatsapp } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 import './join.css'
 
 export function Join(): JSX.Element {
     return(
         <section id='join' className='join-section' aria-label='join group section'>
             <div className='join-container'>
-                <span className="join-title">Doors are open</span>
-                <h1 >
+                <motion.span 
+                    className="join-title"
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0}}
+                    layout
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ layout: {
+                    type: "spring",
+                    stiffness: 70,
+                    damping: 20,
+                    mass: 1.2
+                    },
+                    type: "spring",
+                    stiffness: 70,
+                    damping: 20,
+                    mass: 1.2
+                    }} 
+                >Doors are open</motion.span>
+                <motion.h1
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0}}
+                    layout
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ layout: {
+                    type: "spring",
+                    stiffness: 70,
+                    damping: 20,
+                    mass: 1.2
+                    },
+                    type: "spring",
+                    stiffness: 70,
+                    damping: 20,
+                    mass: 1.2
+                    }} 
+                >
                     Ready to Prove <br /> Your <span className="gradient">Opinion?</span>
-                </h1>
-                <p className="join-paragraph">
+                </motion.h1>
+                <motion.p 
+                    className="join-paragraph"
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0}}
+                    layout
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ layout: {
+                    type: "spring",
+                    stiffness: 70,
+                    damping: 20,
+                    mass: 1.2
+                    },
+                    type: "spring",
+                    stiffness: 70,
+                    damping: 20,
+                    mass: 1.2
+                    }} 
+                >
                     Join a community where ideas are challenged, opinions are respected, and every conversation is an opportunity to learn.
-                </p>
-                <p className="motto gradient join-motto">“No Just Talk Am. Prove Am.”</p>
+                </motion.p>
+                <motion.p 
+                    className="motto gradient join-motto"
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0}}
+                    layout
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ layout: {
+                    type: "spring",
+                    stiffness: 70,
+                    damping: 20,
+                    mass: 1.2
+                    },
+                    type: "spring",
+                    stiffness: 70,
+                    damping: 20,
+                    mass: 1.2
+                    }} 
+                >“No Just Talk Am. Prove Am.”</motion.p>
                 <div className='join-btns'>
                     <Btn 
                         href='https://chat.whatsapp.com/BMQ9NlSxC1J9gqRLHkUW8K?s=cl&p=a&ilr=0'

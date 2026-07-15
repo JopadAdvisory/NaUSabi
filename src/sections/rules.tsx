@@ -1,21 +1,89 @@
 import type { JSX } from 'react';
 import './rules.css'
+import { motion } from 'framer-motion';
 import { Ban, HeartHandshake, Lightbulb, ShieldCheck, Users } from 'lucide-react';
 
 export function Rules(): JSX.Element {
     return (
         <section className="rules" id="rules" aria-label="House Code">
            <div className="rules-container">
-                <span className="rules-title">House Code</span>
-                <h1 >
+                <motion.span 
+                    className="rules-title"
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0}}
+                    layout
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ layout: {
+                    type: "spring",
+                    stiffness: 70,
+                    damping: 20,
+                    mass: 1.2
+                    },
+                    type: "spring",
+                    stiffness: 70,
+                    damping: 20,
+                    mass: 1.2
+                    }} 
+                >House Code</motion.span>
+                <motion.h1
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0}}
+                    layout
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ layout: {
+                    type: "spring",
+                    stiffness: 70,
+                    damping: 20,
+                    mass: 1.2
+                    },
+                    type: "spring",
+                    stiffness: 70,
+                    damping: 20,
+                    mass: 1.2
+                    }} 
+                >
                     Community <span className="gradient">Rules</span>
-                </h1>
-                <p className="rules-paragraph">
+                </motion.h1>
+                <motion.p 
+                    className="rules-paragraph"
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0}}
+                    layout
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ layout: {
+                    type: "spring",
+                    stiffness: 70,
+                    damping: 20,
+                    mass: 1.2
+                    },
+                    type: "spring",
+                    stiffness: 70,
+                    damping: 20,
+                    mass: 1.2
+                    }} 
+                >
                     A few small agreements that keep the conversation sharp.
-                </p>
+                </motion.p>
 
                 <div className='cards'>
-                    <div className="card">
+                    <motion.div 
+                        className="card"   
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0}}
+                        layout
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ layout: {
+                        type: "spring",
+                        stiffness: 70,
+                        damping: 20,
+                        mass: 1.2
+                        },
+                        type: "spring",
+                        stiffness: 70,
+                        damping: 20,
+                        mass: 1.2
+                        }} 
+                    >
                         <div className='ico'>
                             <Ban className="icon" size={24} />
                         </div>
@@ -23,9 +91,26 @@ export function Rules(): JSX.Element {
                         <p>
                             Keep it clean. Disagreement is fine — disrespect is not.
                         </p>
-                    </div>
+                    </motion.div>
 
-                    <div className="card">
+                    <motion.div 
+                        className="card"
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0}}
+                        layout
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ layout: {
+                        type: "spring",
+                        stiffness: 70,
+                        damping: 20,
+                        mass: 1.2
+                        },
+                        type: "spring",
+                        stiffness: 70,
+                        damping: 20,
+                        mass: 1.2
+                        }} 
+                    >
                         <div className='ico'>
                             <HeartHandshake className="icon" size={24} />
                         </div>
@@ -33,9 +118,26 @@ export function Rules(): JSX.Element {
                         <p>
                             Every voice is welcome. Treat others how you want to be treated.
                         </p>
-                    </div>
+                    </motion.div>
 
-                    <div className="card">
+                    <motion.div 
+                        className="card"
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0}}
+                        layout
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ layout: {
+                        type: "spring",
+                        stiffness: 70,
+                        damping: 20,
+                        mass: 1.2
+                        },
+                        type: "spring",
+                        stiffness: 70,
+                        damping: 20,
+                        mass: 1.2
+                        }} 
+                    >
                         <div className='ico'>
                             <Lightbulb className="icon" size={24} />
                         </div>
@@ -43,9 +145,26 @@ export function Rules(): JSX.Element {
                         <p>
                             Challenge the argument, never the person behind it.
                         </p>
-                    </div>
+                    </motion.div>
 
-                    <div className="card">
+                    <motion.div 
+                        className="card"
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0}}
+                        layout
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ layout: {
+                        type: "spring",
+                        stiffness: 70,
+                        damping: 20,
+                        mass: 1.2
+                        },
+                        type: "spring",
+                        stiffness: 70,
+                        damping: 20,
+                        mass: 1.2
+                        }} 
+                    >
                         <div className='ico'>
                             <ShieldCheck className="icon" size={24} />
                         </div>
@@ -53,9 +172,26 @@ export function Rules(): JSX.Element {
                         <p>
                             Keep the space signal-rich. No self-promo, no noise.
                         </p>
-                    </div>
+                    </motion.div>
 
-                    <div className="card">
+                    <motion.div 
+                        className="card"
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0}}
+                        layout
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ layout: {
+                        type: "spring",
+                        stiffness: 70,
+                        damping: 20,
+                        mass: 1.2
+                        },
+                        type: "spring",
+                        stiffness: 70,
+                        damping: 20,
+                        mass: 1.2
+                        }} 
+                    >
                         <div className='ico'>
                             <Users className="icon" size={24} />
                         </div>
@@ -63,7 +199,7 @@ export function Rules(): JSX.Element {
                         <p>
                             Quiet or loud, expert or curious — the floor is yours.
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
            </div>
         </section>
