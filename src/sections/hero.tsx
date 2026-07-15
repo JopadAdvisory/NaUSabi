@@ -30,12 +30,12 @@ export function Hero(): JSX.Element {
             {/* <img src={Stock2} className='stock2' alt="Stock 2" /> */}
             <img
                 src={isDarkMode ? Stock2 : Stock3}
-                className={isDarkMode ? "stock1" : "stock1"}
+                className={isDarkMode ? "stock2" : "stock1"}
                 alt="Stock"
             />
             <img
                 src={isDarkMode ? Stock1 : Stock4}
-                className={isDarkMode ? "stock2" : "stock2"}
+                className={isDarkMode ? "stock1" : "stock2"}
                 alt="Stock"
             />
             {/* <img src={Stock1} className='stock1' alt="Stock 1" /> */}
