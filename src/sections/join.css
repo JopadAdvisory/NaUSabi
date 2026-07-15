@@ -1,13 +1,16 @@
 .join-container {
     width: 1126px;
     max-width: 90%;
-    padding-top: 20px;
+    padding: 20px 0 30px 0;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     @media (min-width: 768px) {
         align-items: center;
         text-align: center;
+    }
+
+    @media (min-width: 1024px) {
         max-width: 80%;
     }
 }
@@ -34,9 +37,19 @@
     @media (min-width: 768px) {
         font-size: 5rem;
     }
-    
 }
 
 .join-motto {
     padding: 20px 0;
+}
+
+.join-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
 }

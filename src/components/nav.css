@@ -18,9 +18,11 @@
     padding: 10px 16px;
     gap: 15px;
      @media (min-width: 768px) {
-        max-width: 80%;
         justify-content: initial;
         gap: 50%;
+    }
+     @media (min-width: 1024px) {
+        max-width: 80%;
     }
 }
 

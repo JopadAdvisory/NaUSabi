@@ -4,6 +4,7 @@ import { Community } from './sections/community';
 import { Hero } from './sections/hero';
 import { Join } from './sections/join';
 import { Rules } from './sections/rules';
+import { Footer } from './components/footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Community />
       <Rules />
       <Join />
+      <Footer />
     </main>
   )
 }

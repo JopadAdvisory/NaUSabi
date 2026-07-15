@@ -5,7 +5,7 @@ import './join.css'
 
 export function Join(): JSX.Element {
     return(
-        <section className='join-section' aria-label='join group section'>
+        <section id='join' className='join-section' aria-label='join group section'>
             <div className='join-container'>
                 <span className="join-title">Doors are open</span>
                 <h1 >
