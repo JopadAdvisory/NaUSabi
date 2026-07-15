@@ -32,7 +32,7 @@ export function Footer(): JSX.Element {
                         </a>
                         <a className='footer-icon' href='https://t.me/NaU_Sabi'>
                             Telegram
-                            <FaTelegram size={24} />
+                            <FaTelegram size={19} />
                         </a>
                     </div>
                 </header>
