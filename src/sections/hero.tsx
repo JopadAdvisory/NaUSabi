@@ -27,18 +27,16 @@ export function Hero(): JSX.Element {
     return (
         <section className="hero" id='hero' aria-label="Hero section">
             <article className="hero__container" aria-label="Hero content">
-            {/* <img src={Stock2} className='stock2' alt="Stock 2" /> */}
-            <img
+            {/* <img
                 src={isDarkMode ? Stock2 : Stock3}
                 className={isDarkMode ? "stock2" : "stock1"}
                 alt="Stock"
-            />
+            /> */}
             <img
                 src={isDarkMode ? Stock1 : Stock4}
                 className={isDarkMode ? "stock1" : "stock2"}
                 alt="Stock"
             />
-            {/* <img src={Stock1} className='stock1' alt="Stock 1" /> */}
                 <div className="hero__text">
                     <div className="hero__title-container">
                         <span className="hero__highlight"></span>
