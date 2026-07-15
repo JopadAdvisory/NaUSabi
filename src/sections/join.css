@@ -66,9 +66,9 @@
     z-index: -2;
     left: 0;
     filter: blur(200px);
-    /* animation: pulse2 20.5s ease-in-out infinite; */
+    animation: pulse2 20.5s ease-in-out infinite;
     bottom: 0;
-    border: 2px solid red;
     width: 100%;
-    background: var(--primary);
+    transform: translateX(50%);
+    background: var(--border2);
 }
