@@ -68,6 +68,5 @@
     filter: blur(200px);
     bottom: 0;
     width: 100%;
-    transform: translateX(50%);
     background: var(--border2);
 }
