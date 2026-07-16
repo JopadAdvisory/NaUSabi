@@ -27,8 +27,7 @@ export function Community(): JSX.Element {
                 >The Community</motion.span>
                 <motion.h1
                     initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0}}
-                    layout
+                    whileInView={{ opacity: 1, y: 0}}/////////////////////////////////
                     viewport={{ once: true, amount: 0.3 }}
                     transition={{ layout: {
                     type: "spring",
@@ -48,7 +47,6 @@ export function Community(): JSX.Element {
                     className="community-paragraph"
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0}}
-                    layout
                     viewport={{ once: true, amount: 0.3 }}
                     transition={{ layout: {
                     type: "spring",
@@ -68,9 +66,9 @@ export function Community(): JSX.Element {
                 <div className='cards'>
                     <motion.div 
                         className="card"
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0}}
-                        layout
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                    
                         viewport={{ once: true, amount: 0.3 }}
                         transition={{ layout: {
                         type: "spring",
@@ -95,9 +93,9 @@ export function Community(): JSX.Element {
 
                     <motion.div 
                         className="card"
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0}}
-                        layout
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+        
                         viewport={{ once: true, amount: 0.3 }}
                         transition={{ layout: {
                         type: "spring",
@@ -122,9 +120,9 @@ export function Community(): JSX.Element {
 
                     <motion.div 
                         className="card"
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0}}
-                        layout
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        
                         viewport={{ once: true, amount: 0.3 }}
                         transition={{ layout: {
                         type: "spring",
@@ -149,9 +147,9 @@ export function Community(): JSX.Element {
 
                     <motion.div 
                         className="card"
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0}}
-                        layout
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        
                         viewport={{ once: true, amount: 0.3 }}
                         transition={{ layout: {
                         type: "spring",
