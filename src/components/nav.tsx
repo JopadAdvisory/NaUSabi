@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { X, Menu } from 'lucide-react';
 import type { JSX } from 'react/jsx-runtime';
 import './nav.css'
+import { AnimatePresence, motion } from 'framer-motion';
 
 export function Nav(): JSX.Element {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -49,15 +50,32 @@ export function Nav(): JSX.Element {
             </ul>
 
             {menuOpen && (
-                <div className="mobile-menu">
-                    <a href="#community">What is it</a>
-                    <a href="#rules">Rules</a>
-                    <div className='right right2'>
-                        <a href="#join">
-                            Join
-                        </a>
-                    </div>
-                </div>
+                <AnimatePresence>
+                    <motion.div 
+                        className="mobile-menu"
+                        initial={{ scale: 0, opacity: 0, translateX: "-50%" }}
+                        layout
+                        animate={{ scale: 1, opacity: 1 }}
+                        exit={{ scale: 0, opacity: 0, transition: { duration: 0.55 } }}
+                        transition={{ layout: {
+                        type: "spring",
+                        bounce: 0.6,
+                        duration: 0.55
+                        },
+                        type: "spring",
+                        stiffness: 120,
+                        damping: 14
+                        }}
+                    >
+                        <a href="#community">What is it</a>
+                        <a href="#rules">Rules</a>
+                        <div className='right right2'>
+                            <a href="#join">
+                                Join
+                            </a>
+                        </div>
+                    </motion.div>
+                </AnimatePresence>
             )}
         </nav>
     );
