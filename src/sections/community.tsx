@@ -94,7 +94,7 @@ export function Community(): JSX.Element {
                         className="card glow-target"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-        
+                        layout
                         viewport={{ once: true, amount: 0.5 }}
                         transition={{ layout: {
                         type: "spring",
@@ -121,7 +121,6 @@ export function Community(): JSX.Element {
                         className="card glow-target"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        
                         viewport={{ once: true, amount: 0.5 }}
                         transition={{ layout: {
                         type: "spring",

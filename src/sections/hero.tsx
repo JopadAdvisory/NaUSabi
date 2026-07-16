@@ -1,8 +1,8 @@
 import  { type JSX, useEffect, useState } from 'react';
-import Mascot from '../assets/images/hero-mascots.png'
-import Mascot2 from '../assets/images/lm.png'
-import Stock1 from '../assets/images/stock1.png';
-import Stock4 from '../assets/images/ls1.png';
+import Mascot from '../assets/images/hero-mascots.webp'
+import Mascot2 from '../assets/images/lm.webp'
+import Stock1 from '../assets/images/stock1.webp';
+import Stock4 from '../assets/images/ls1.webp';
 import './hero.css';
 import { Btn } from '../components/btns';
 import { FaTelegram, FaWhatsapp } from 'react-icons/fa';
@@ -29,6 +29,7 @@ export function Hero(): JSX.Element {
             <img
                 src={isDarkMode ? Stock1 : Stock4}
                 className={isDarkMode ? "stock1" : "stock1"}
+                fetchPriority='high'
                 alt="Stock"
             />
                 <div className="hero__text">
@@ -185,6 +186,7 @@ export function Hero(): JSX.Element {
                         src={isDarkMode ? Mascot : Mascot2}
                         className={isDarkMode ? "hero__mascot" : "hero__mascot"}
                         alt="Hero Mascot"
+                        loading='lazy'
                     />
                 </div>
             </article>

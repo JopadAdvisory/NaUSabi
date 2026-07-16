@@ -30,7 +30,7 @@
     --border1: oklch(0% 0 0 / 0.08);
     --border2: oklch(72% .14 88 / 0.45);
     --border3: oklch(72% .14 88 / 0.18);
-    --mascot: url('/src/assets/images/lm.png');
+    --mascot: url('/src/assets/images/lm.webp');
 
     --btn1: oklch(78% .19 128);
     --btn2: oklch(94% 0 0);
@@ -65,7 +65,7 @@
     --gradient-hero: radial-gradient(ellipse at 70% 40%, var(--primary) 0%, transparent 55%);
     --gradient: linear-gradient(135deg, #d4af37 0%, #f5d77a 50%, #d4af37 100%);
     --muted: oklch(19% 0 0);
-    --mascot: url('/src/assets/images/hero-mascots.png');
+    --mascot: url('/src/assets/images/hero-mascots.webp');
     --muted-foreground: oklch(72% 0 0);
     --border1: oklch(100% 0 0 / .08); 
     --border2: oklch(78% .14 88 / .6);
