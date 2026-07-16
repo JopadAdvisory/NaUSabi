@@ -148,6 +148,7 @@
         filter: drop-shadow(0 10px 10px var(--border2));
         bottom: 0;
         width: 465px;
+        height: auto;
     }
 }
 
@@ -158,6 +159,7 @@
     top: 60px;
     bottom: 0;
     width: 300px;
+    height: auto;
     @media (min-width: 768px) {
         top: 30px;
         width: 500px;
@@ -171,6 +173,7 @@
     z-index: -1;
     bottom: -60px;
     width: 50%;
+    height: auto;
     display: none;
     @media (min-width: 1024px) {
         bottom: 30px;
@@ -183,7 +186,7 @@
 .hero__mascot {
     width: 100%;
     filter: drop-shadow(0 10px 50px var(--border2));
-    max-width: 400px;
+    max-width: 300px;
     object-fit: contain;
     @media (min-width: 768px) {
         max-width: 500px;

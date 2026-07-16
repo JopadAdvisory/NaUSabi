@@ -186,7 +186,7 @@ export function Hero(): JSX.Element {
                         src={isDarkMode ? Mascot : Mascot2}
                         className={isDarkMode ? "hero__mascot" : "hero__mascot"}
                         alt="Hero Mascot"
-                        loading='lazy'
+                        fetchPriority='high'
                     />
                 </div>
             </article>
