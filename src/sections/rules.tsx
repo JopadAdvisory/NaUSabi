@@ -67,11 +67,11 @@ export function Rules(): JSX.Element {
 
                 <div className='cards'>
                     <motion.div 
-                        className="card"   
+                        className="card glow-target"   
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1}}
                         layout
-                        viewport={{ once: true, amount: 0.3 }}
+                        viewport={{ once: true, amount: 0.5 }}
                         transition={{ layout: {
                         type: "spring",
                         stiffness: 70,
@@ -94,11 +94,11 @@ export function Rules(): JSX.Element {
                     </motion.div>
 
                     <motion.div 
-                        className="card"
+                        className="card glow-target"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         layout
-                        viewport={{ once: true, amount: 0.3 }}
+                        viewport={{ once: true, amount: 0.5 }}
                         transition={{ layout: {
                         type: "spring",
                         stiffness: 70,
@@ -121,11 +121,11 @@ export function Rules(): JSX.Element {
                     </motion.div>
 
                     <motion.div 
-                        className="card"
+                        className="card glow-target"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         layout
-                        viewport={{ once: true, amount: 0.3 }}
+                        viewport={{ once: true, amount: 0.5 }}
                         transition={{ layout: {
                         type: "spring",
                         stiffness: 70,
@@ -148,11 +148,11 @@ export function Rules(): JSX.Element {
                     </motion.div>
 
                     <motion.div 
-                        className="card"
+                        className="card glow-target"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         layout
-                        viewport={{ once: true, amount: 0.3 }}
+                        viewport={{ once: true, amount: 0.5 }}
                         transition={{ layout: {
                         type: "spring",
                         stiffness: 70,
@@ -175,11 +175,11 @@ export function Rules(): JSX.Element {
                     </motion.div>
 
                     <motion.div 
-                        className="card"
+                        className="card glow-target"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         layout
-                        viewport={{ once: true, amount: 0.3 }}
+                        viewport={{ once: true, amount: 0.5 }}
                         transition={{ layout: {
                         type: "spring",
                         stiffness: 70,

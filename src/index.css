@@ -156,3 +156,40 @@ span {
   font-family: var(--heading);
 }
 
+.cursor-glow {
+  @media (min-width: 768px) {
+    position: fixed;
+    inset: 0;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+
+    background: radial-gradient(
+      circle,
+      color-mix(in oklab, var(--primary) 18%, transparent) 0%,
+      color-mix(in oklab, var(--primary) 8%, transparent) 35%,
+      transparent 70%
+    );
+
+    filter: blur(60px);
+    transform: translate(-50%, -50%);
+    will-change: transform, opacity;
+    }
+}
+
+.cursor-glow {
+  opacity: .5;
+  transition: opacity .3s ease,
+  width .3s ease,
+  height .3s ease;
+}
+
+.cursor-glow.active {
+  width: 750px;
+  height: 750px;
+  opacity: .8;
+}
+
+

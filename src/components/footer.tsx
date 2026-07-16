@@ -21,18 +21,18 @@ export function Footer(): JSX.Element {
                     </div>
                     <div className="section2">
                         <a href="#hero">Home</a>
-                        <a href="#community">What is Na U Sabi</a>
+                        <a href="#community">What is Na U Sabi?</a>
                         <a href="#rules">Community Rules</a>
                         <a href="#join">Join Community</a>
                     </div>
                     <div className="section3">
                         <a className='footer-icon' href='https://chat.whatsapp.com/BMQ9NlSxC1J9gqRLHkUW8K?s=cl&p=a&ilr=0'>
-                            WhatsApp
-                            <FaWhatsapp size={19} />
+                            {/* WhatsApp */}
+                            <FaWhatsapp size={30} />
                         </a>
                         <a className='footer-icon' href='https://t.me/NaU_Sabi'>
-                            Telegram
-                            <FaTelegram size={19} />
+                            {/* Telegram */}
+                            <FaTelegram size={30} />
                         </a>
                     </div>
                 </header>
@@ -40,10 +40,10 @@ export function Footer(): JSX.Element {
             <div className="copyright">
                 <p className='cr'>
                     <Copyright  size={14}/>
-                    <div>
+                    <span>
                         {new Date().getFullYear()}
                         <span className='footer-subtext'> Na U Sabi. All rights reserved.</span>
-                    </div>
+                    </span>
                 </p>
             </div>
         </footer>

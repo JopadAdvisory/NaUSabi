@@ -63,13 +63,12 @@ export function Community(): JSX.Element {
                     Na U Sabi is a community where people come together to answer interesting questions, share opinions, learn from different perspectives and enjoy meaningful conversations. Whether you're right or wrong, your opinion deserves to be heard.
                 </motion.p>
 
-                <div className='cards'>
+                <div className='cards glow-target'>
                     <motion.div 
                         className="card"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                    
-                        viewport={{ once: true, amount: 0.3 }}
+                        viewport={{ once: true, amount: 0.5 }}
                         transition={{ layout: {
                         type: "spring",
                         stiffness: 70,
@@ -92,11 +91,11 @@ export function Community(): JSX.Element {
                     </motion.div>
 
                     <motion.div 
-                        className="card"
+                        className="card glow-target"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
         
-                        viewport={{ once: true, amount: 0.3 }}
+                        viewport={{ once: true, amount: 0.5 }}
                         transition={{ layout: {
                         type: "spring",
                         stiffness: 70,
@@ -119,11 +118,11 @@ export function Community(): JSX.Element {
                     </motion.div>
 
                     <motion.div 
-                        className="card"
+                        className="card glow-target"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         
-                        viewport={{ once: true, amount: 0.3 }}
+                        viewport={{ once: true, amount: 0.5 }}
                         transition={{ layout: {
                         type: "spring",
                         stiffness: 70,
@@ -146,11 +145,11 @@ export function Community(): JSX.Element {
                     </motion.div>
 
                     <motion.div 
-                        className="card"
+                        className="card glow-target"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         
-                        viewport={{ once: true, amount: 0.3 }}
+                        viewport={{ once: true, amount: 0.5 }}
                         transition={{ layout: {
                         type: "spring",
                         stiffness: 70,
