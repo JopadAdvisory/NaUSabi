@@ -115,7 +115,8 @@
     position: fixed;
     top: 85px;
     left: 50%;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
+    transform-origin: center;
     width: 1126px;
     max-width: 90%;
     z-index: 3;

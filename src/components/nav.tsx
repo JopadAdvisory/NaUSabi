@@ -49,14 +49,15 @@ export function Nav(): JSX.Element {
                 
             </ul>
 
-            {menuOpen && (
-                <AnimatePresence>
+            <AnimatePresence>
+                {menuOpen && (
                     <motion.div 
+                        key = "mobile-menu"
                         className="mobile-menu"
                         initial={{ scale: 0, opacity: 0, translateX: "-50%" }}
                         layout
-                        animate={{ scale: 1, opacity: 1 }}
-                        exit={{ scale: 0, opacity: 0, transition: { duration: 0.55 } }}
+                        animate={{ scale: 1, opacity: 1, translateX: "-50%" }}
+                        exit={{ scale: 0, opacity: 0, translateX: "-50%", transition: { duration: 0.55 } }}
                         transition={{ layout: {
                         type: "spring",
                         bounce: 0.6,
@@ -75,8 +76,8 @@ export function Nav(): JSX.Element {
                             </a>
                         </div>
                     </motion.div>
-                </AnimatePresence>
-            )}
+                )}
+            </AnimatePresence>
         </nav>
     );
 }
