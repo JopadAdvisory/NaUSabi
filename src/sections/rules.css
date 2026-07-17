@@ -50,7 +50,7 @@
     transform: translateY(-5px);
 }
 
-.card h3 {
+.card .h3 {
     padding: 10px 0;
 }
 
