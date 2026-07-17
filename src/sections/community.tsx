@@ -84,7 +84,7 @@ export function Community(): JSX.Element {
                         <div className='ico'>
                             <Vote className="icon" size={24} />
                         </div>
-                        <h3>Daily Polls</h3>
+                        <p className='h3'>Daily Polls</p>
                         <p>
                             Join exciting daily polls that challenge how you think.
                         </p>
@@ -111,7 +111,7 @@ export function Community(): JSX.Element {
                         <div className='ico'>
                             <MessagesSquare className="icon" size={24} />
                         </div>
-                        <h3>Discussions</h3>
+                        <p className='h3'>Discussions</p>
                         <p>
                             Respectful conversations with different opinions.
                         </p>
@@ -137,7 +137,7 @@ export function Community(): JSX.Element {
                         <div className='ico'>
                             <Brain className="icon" size={24} />
                         </div>
-                        <h3>Learn</h3>
+                        <p className='h3'>Learn</p>
                         <p>
                             See how other people think — and stretch your own thinking.
                         </p>
@@ -164,7 +164,7 @@ export function Community(): JSX.Element {
                         <div className='ico'>
                             <Trophy className="icon" size={24} />
                         </div>
-                        <h3>Community</h3>
+                        <p className='h3'>Community</p>
                         <p>
                             Join exciting daily polls that challenge how you think.
                         </p>

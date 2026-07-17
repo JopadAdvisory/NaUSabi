@@ -79,7 +79,7 @@ export function Rules(): JSX.Element {
                         <div className='ico'>
                             <Ban className="icon" size={24} />
                         </div>
-                        <h3>No insults</h3>
+                        <p className='h3'>No insults</p>
                         <p>
                             Keep it clean. Disagreement is fine — disrespect is not.
                         </p>
@@ -104,7 +104,7 @@ export function Rules(): JSX.Element {
                         <div className='ico'>
                             <HeartHandshake className="icon" size={24} />
                         </div>
-                        <h3>Respect everyone</h3>
+                        <p className='h3'>Respect everyone</p>
                         <p>
                             Every voice is welcome. Treat others how you want to be treated.
                         </p>
@@ -129,7 +129,7 @@ export function Rules(): JSX.Element {
                         <div className='ico'>
                             <Lightbulb className="icon" size={24} />
                         </div>
-                        <h3>Attack ideas, not people</h3>
+                        <p className='h3'>Attack ideas, not people</p>
                         <p>
                             Challenge the argument, never the person behind it.
                         </p>
@@ -154,7 +154,7 @@ export function Rules(): JSX.Element {
                         <div className='ico'>
                             <ShieldCheck className="icon" size={24} />
                         </div>
-                        <h3>No spam</h3>
+                        <p className='h3'>No spam</p>
                         <p>
                             Keep the space signal-rich. No self-promo, no noise.
                         </p>
@@ -179,7 +179,7 @@ export function Rules(): JSX.Element {
                         <div className='ico'>
                             <Users className="icon" size={24} />
                         </div>
-                        <h3>Everyone can participate</h3>
+                        <p className='h3'>Everyone can participate</p>
                         <p>
                             Quiet or loud, expert or curious — the floor is yours.
                         </p>

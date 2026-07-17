@@ -111,10 +111,15 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+.h3 {
   font-family: var(--heading);
   font-weight: 700;
   color: var(--fg);
+}
+
+.h3 {
+  font-size: 1.17em;
 }
 
 h1 {
