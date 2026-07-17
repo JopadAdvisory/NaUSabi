@@ -9,29 +9,29 @@ export function Nav(): JSX.Element {
 
     return(
         <nav>
-            <ul className='nav__container'>
+            <div className='nav__container'>
                 <div className='sub-con'>
                     <div className='left'>
                         <a href="#hero">
-                            <li>
+                            <div>
                                 <span>N</span>
                                 <span>Na U Sabi</span>
-                            </li>
+                            </div>
                         </a>
                     </div>
                  
                     <div className='first'>
                         <a href="#community">
-                            <li>What is it</li>
+                            What is it
                         </a>
                         <a href="#rules">
-                            <li>Rules</li>
+                            Rules
                         </a>
                     </div>
                   
                     <div className='right right1'>
                         <a href="#join">
-                            <li>Join</li>
+                            Join
                         </a>
                     </div>
                 </div>
@@ -42,12 +42,13 @@ export function Nav(): JSX.Element {
                     <button
                         className="menu-btn"
                         onClick={() => setMenuOpen(!menuOpen)}
+                        aria-label={menuOpen ? "Close menu" : "Open Menu"}
                     >
                         {menuOpen ? <X size={24} className='nav-icon' /> : <Menu className='nav-icon' size={24} />}
                     </button>
                 </div>
                 
-            </ul>
+            </div>
 
             <AnimatePresence>
                 {menuOpen && (

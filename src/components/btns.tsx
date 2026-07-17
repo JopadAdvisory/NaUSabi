@@ -7,6 +7,7 @@ type BtnProps = {
     children?: React.ReactNode;
     className?: string;
 }
+
 export function Btn({ href, className, children} : BtnProps): JSX.Element {
     return (
         <motion.div 
@@ -24,7 +25,12 @@ export function Btn({ href, className, children} : BtnProps): JSX.Element {
             ease: [0.16, 1, 0.3,1 ]
         }}
         > 
-            <a href={href} className={className}>{children}</a>
+            <a  
+                href={href} 
+                className={className}
+                target='_blank'
+                rel='noopener noreferrer'
+            >{children}</a>
         </motion.div>
     );
 }

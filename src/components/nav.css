@@ -56,7 +56,7 @@
     font-weight: 600;
 }
 
-.left li {
+.left div {
     display: flex;
     gap: 8px;
     align-items: center;

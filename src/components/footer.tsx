@@ -26,12 +26,22 @@ export function Footer(): JSX.Element {
                         <a href="#join">Join Community</a>
                     </div>
                     <div className="section3">
-                        <a className='footer-icon' href='https://chat.whatsapp.com/BMQ9NlSxC1J9gqRLHkUW8K?s=cl&p=a&ilr=0'>
-                            {/* WhatsApp */}
+                        <a 
+                            className='footer-icon'
+                            href='https://chat.whatsapp.com/BMQ9NlSxC1J9gqRLHkUW8K?s=cl&p=a&ilr=0'
+                            target='_blank'
+                            aria-label='Join Our WhatsApp Community'
+                            rel='noopener noreferrer'
+                        >
                             <FaWhatsapp size={30} />
                         </a>
-                        <a className='footer-icon' href='https://t.me/NaU_Sabi'>
-                            {/* Telegram */}
+                        <a 
+                            className='footer-icon' 
+                            href='https://t.me/NaU_Sabi'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            aria-label='Join Our Telegram Community'
+                        >
                             <FaTelegram size={30} />
                         </a>
                     </div>
