@@ -134,13 +134,14 @@
 }
 
 .logo {
-    width: 170px;
+    width: 140px;
     display: inline-block;
     background: var(--logo);
     background-repeat: no-repeat;
     background-size: 190px;
     background-position: -22px -44px;
     height: 30px;
+    /* border: 1px solid red; */
     @media (prefers-color-scheme: dark) {
         background-size: 160px;
         background-position: -10px -25px;
