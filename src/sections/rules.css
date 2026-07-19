@@ -59,7 +59,6 @@
 }
 
 .ico {
-    border: 2px solid red;
     display: inline-flex;
     border: 1px solid var(--border3);
     background-color: color-mix(in oklab, var(--primary) 5%, transparent);

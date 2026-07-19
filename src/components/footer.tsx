@@ -10,12 +10,7 @@ export function Footer(): JSX.Element {
                 <header className="header">
                     <div className="section1">
                         <div className='footer-left'>
-                            <a href="#hero">
-                                <div className='logo'>
-                                    <span>N</span>
-                                    <span>Na U Sabi</span>
-                                </div>
-                            </a>
+                            <a className='logo' href="#hero"  aria-label='NA U SABI Logo'></a>
                             <p className='footer-subtext fs'>Everybody Has An Opinion. <br /> What's Yours?</p>
                         </div>
                     </div>

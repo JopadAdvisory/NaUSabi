@@ -7,7 +7,7 @@
     --card: oklch(100% 0 0);
     --nav: oklch(99% 0 0 / 0.82);
     --card-fg: oklch(14% 0 0);
-
+    --logo: url("/src/assets/images/dlogo1.png");
     --primary: oklch(72% .14 88);
     --primary-fg: oklch(99% 0 0);
 
@@ -60,6 +60,7 @@
     --card: oklch(16% 0 0);
     --nav: oklch(15.907% 0.00002 271.152 / 0.411);
     --card-fg: oklch(98.5% 0 0);
+    --logo: url("/src/assets/images/wlogo.png");
     --primary-fg: oklch(12% 0 0);
     --primary: oklch(78% .14 88);
     --gradient-hero: radial-gradient(ellipse at 70% 40%, var(--primary) 0%, transparent 55%);

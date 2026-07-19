@@ -12,12 +12,7 @@ export function Nav(): JSX.Element {
             <div className='nav__container'>
                 <div className='sub-con'>
                     <div className='left'>
-                        <a href="#hero">
-                            <div>
-                                <span>N</span>
-                                <span>Na U Sabi</span>
-                            </div>
-                        </a>
+                        <a className='logo' href="#hero"  aria-label='NA U SABI Logo'></a>
                     </div>
                  
                     <div className='first'>
