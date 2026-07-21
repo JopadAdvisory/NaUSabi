@@ -107,6 +107,7 @@
     color: var(--fg);
     transition: all .3s ease-in-out;
 }
+
 .menu:hover .nav-icon {
     color: var(--primary);
 }
@@ -141,8 +142,8 @@
     background-size: 190px;
     background-position: -22px -44px;
     height: 30px;
-    /* border: 1px solid red; */
     @media (prefers-color-scheme: dark) {
+        width: 13i0px;
         background-size: 160px;
         background-position: -10px -25px;
     }
